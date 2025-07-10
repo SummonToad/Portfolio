@@ -11,15 +11,17 @@ header {
   background-image: url('../images/banner.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px; /* adjust based on how tall you want the banner */
+  background-repeat: no-repeat;
+  height: 300px;
   color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0 5px black; /* optional: makes text more readable */
+  position: relative;
+  padding: 1rem;
 }
-
 nav a {
   margin: 0 1rem;
   color: #fff;
