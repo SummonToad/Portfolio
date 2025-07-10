@@ -33,10 +33,11 @@ section {
 }
 
 .gallery img {
-  width: 100%;
-  max-width: 250px;
+  max-width: 100%;
+  height: auto;
   border: 2px solid #ccc;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 footer {
