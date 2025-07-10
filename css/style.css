@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #fdfdfd;
+  background: #fffccd;
   color: #333;
 }
 
 header {
-  background: #222;
-  color: #fff;
+  background: #9b542a;
+  color:    #ffffff;
   padding: 1rem;
   text-align: center;
 }
