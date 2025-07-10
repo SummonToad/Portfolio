@@ -3,15 +3,21 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #fffccd;
+  background: #ffeecb;
   color: #333;
 }
 
 header {
-  background: #9b542a;
-  color:    #ffffff;
-  padding: 1rem;
-  text-align: center;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* adjust based on how tall you want the banner */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 5px black; /* optional: makes text more readable */
 }
 
 nav a {
