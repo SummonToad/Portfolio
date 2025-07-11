@@ -22,6 +22,7 @@ header {
   position: relative;
   padding: 1rem;
 }
+
 nav a {
   margin: 0 1rem;
   color: #fff;
@@ -34,18 +35,47 @@ section {
   margin: auto;
 }
 
+/* 🎯 Responsive grid layout */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
 }
 
-.gallery img {
-  max-width: 100%;
+/* 📦 Wrap image and caption */
+.project {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🖼️ Image styles with hover */
+.project img {
+  width: 100%;
   height: auto;
-  border: 2px solid #ccc;
   border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   object-fit: contain;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏷️ Caption styling */
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 600px) {
+  .caption {
+    font-size: 0.85rem;
+  }
 }
 
 footer {
