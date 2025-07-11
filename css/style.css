@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #ffeecb;
+  background: #ffde9d;
   color: #333;
 }
 
@@ -82,4 +82,28 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #dbcaa7;
+}
+
+/* 🌄 Parallax background rectangle */
+.parallax-background {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  height: 100vh;
+  background-image: url('../images/texture.png'); /* Use your image path */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;   /* Use 'no-repeat' if you want a single image */
+  background-size: cover;      /* Or use 'contain' or specific dimensions */
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🧱 Content sits above background */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
 }
